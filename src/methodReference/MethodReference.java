@@ -1,4 +1,4 @@
-package com.np.java8features;
+package methodReference;
 
 import java.util.Arrays;
 import java.util.List;

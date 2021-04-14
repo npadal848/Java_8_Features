@@ -1,4 +1,4 @@
-package com.np.java8features;
+package forEach;
 
 import java.util.ArrayList;
 import java.util.List;
