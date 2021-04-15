@@ -18,8 +18,7 @@ public class OptionalPractice {
 //		To avoid NullPointerException which above commented line throws we can use Optinal from Java 8
 		for (String str : strs) {
 			Optional<String> optStr = Optional.ofNullable(str);
-			if (optStr.isPresent())
-				System.out.println(optStr.get());
+			optStr.ifPresent(System.out::println);
 		}
 	}
 }
