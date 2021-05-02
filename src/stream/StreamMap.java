@@ -1,6 +1,7 @@
 package stream;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class StreamMap {
@@ -36,6 +37,10 @@ public class StreamMap {
 		
 		System.out.println("\nUse of Stream distinct()");
 		students.stream().distinct().forEach(System.out::println);
+		
+		System.out.println("\nGroup the Students, name as key and Student obj value");
+		Map<String, List<Student>> map = students.stream().collect(Collectors.groupingBy(Student::getName));
+		System.out.println(map);
 	}
 
 }

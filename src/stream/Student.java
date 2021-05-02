@@ -2,7 +2,7 @@ package stream;
 
 import java.util.List;
 
-public class Student {
+public class Student implements Comparable<Student>{
 
 	private int id;
 	private String name;
@@ -55,6 +55,10 @@ public class Student {
 			return this.id == st.getId();
 		}
 		return false;
-
+	}
+	
+	@Override
+	public int compareTo(Student student) {
+		return id-student.getId();
 	}
 }

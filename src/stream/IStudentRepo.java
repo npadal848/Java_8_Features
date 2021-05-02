@@ -13,8 +13,7 @@ public interface IStudentRepo {
 						new Student(101, "Aditya", Arrays.asList("754745367", "8566456464")),
 						new Student(102, "Rakesh", Arrays.asList("853323678", "0987634667")),
 						new Student(103, "Santosh", Arrays.asList("7543456778", "843445645")),
-						new Student(101, "Aditya", Arrays.asList("754745367", "8566456464")))
+						new Student(101, "Abhisekh", Arrays.asList("754745367", "8566456464")))
 				.collect(Collectors.toList());
-
 	}
 }
