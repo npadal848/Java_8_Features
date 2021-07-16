@@ -1,5 +1,8 @@
 package optional;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 public class OptionalPractice {
@@ -20,5 +23,8 @@ public class OptionalPractice {
 			Optional<String> optStr = Optional.ofNullable(str);
 			optStr.ifPresent(System.out::println);
 		}
+		
+		User user = new User(1, "", "HYD");
+		Optional.ofNullable(user).orElse(new User());
 	}
 }
