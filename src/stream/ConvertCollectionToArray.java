@@ -12,6 +12,7 @@ public class ConvertCollectionToArray {
 		
 		// Convert List<Employee> to Employee Array
 		 Employee[] empArr = employees.stream().toArray(Employee[]::new);
+		 
 		 Arrays.stream(empArr).forEach(System.out::println);
 	}
 }
